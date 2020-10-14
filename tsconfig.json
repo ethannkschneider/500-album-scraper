@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/node10/tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": ["es2018", "dom"],
+    "outDir": "dist/",
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["src"]
+}

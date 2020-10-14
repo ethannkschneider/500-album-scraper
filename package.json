@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "start": "npm run tsc && node ./dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,20 @@
   "bugs": {
     "url": "https://github.com/ethannkschneider/500-album-scraper/issues"
   },
-  "homepage": "https://github.com/ethannkschneider/500-album-scraper#readme"
+  "homepage": "https://github.com/ethannkschneider/500-album-scraper#readme",
+  "dependencies": {
+    "@types/lodash": "^4.14.161",
+    "@types/puppeteer": "^3.0.2",
+    "axios": "^0.20.0",
+    "cheerio": "^1.0.0-rc.3",
+    "csv-writer": "^1.6.0",
+    "lodash": "^4.17.20",
+    "puppeteer": "^5.3.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node10": "^1.0.7",
+    "@types/axios": "^0.14.0",
+    "@types/cheerio": "^0.22.22",
+    "typescript": "^4.0.3"
+  }
 }
